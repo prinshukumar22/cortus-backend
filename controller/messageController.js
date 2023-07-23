@@ -3,6 +3,7 @@ const messageModel = require("../models/messageModel");
 exports.addMessage = async (req, res, next) => {
   try {
     const { message, from, to } = req.body;
+    console.log(message);
     const data = await messageModel.create({
       message: {
         text: message,

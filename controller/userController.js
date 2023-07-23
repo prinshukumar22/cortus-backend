@@ -67,6 +67,7 @@ exports.postSetAvatar = async (req, res, next) => {
       isAvatarImageSet: true,
       avatarImage: avatarImage,
     });
+
     return res.json({
       isSet: userData.isAvatarImageSet,
       image: userData.avatarImage,
